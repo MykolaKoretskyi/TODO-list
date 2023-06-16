@@ -17,9 +17,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import ua.shplusplus.restapidevelopment.entities.SuccessDTO;
-import ua.shplusplus.restapidevelopment.entities.Task;
-import ua.shplusplus.restapidevelopment.entities.TaskDTO;
+import ua.shplusplus.restapidevelopment.model.SuccessDTO;
+import ua.shplusplus.restapidevelopment.model.Task;
+import ua.shplusplus.restapidevelopment.model.TaskDTO;
 import ua.shplusplus.restapidevelopment.exceptions.RequestException;
 import ua.shplusplus.restapidevelopment.repositories.TaskRepository;
 

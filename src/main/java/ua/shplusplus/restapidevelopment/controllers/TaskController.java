@@ -24,9 +24,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import ua.shplusplus.restapidevelopment.entities.SuccessDTO;
-import ua.shplusplus.restapidevelopment.entities.Task;
-import ua.shplusplus.restapidevelopment.entities.TaskDTO;
+import ua.shplusplus.restapidevelopment.model.SuccessDTO;
+import ua.shplusplus.restapidevelopment.model.Task;
+import ua.shplusplus.restapidevelopment.model.TaskDTO;
 import ua.shplusplus.restapidevelopment.services.TaskService;
 
 
