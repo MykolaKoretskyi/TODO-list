@@ -27,9 +27,9 @@ import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
-import ua.shplusplus.restapidevelopment.entities.Task;
-import ua.shplusplus.restapidevelopment.entities.TaskDTO;
-import ua.shplusplus.restapidevelopment.entities.TaskStatus;
+import ua.shplusplus.restapidevelopment.model.Task;
+import ua.shplusplus.restapidevelopment.model.TaskDTO;
+import ua.shplusplus.restapidevelopment.model.TaskStatus;
 import ua.shplusplus.restapidevelopment.exceptions.RequestException;
 import ua.shplusplus.restapidevelopment.repositories.TaskRepository;
 

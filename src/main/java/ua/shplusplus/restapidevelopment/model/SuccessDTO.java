@@ -1,4 +1,4 @@
-package ua.shplusplus.restapidevelopment.entities;
+package ua.shplusplus.restapidevelopment.model;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.time.LocalDateTime;

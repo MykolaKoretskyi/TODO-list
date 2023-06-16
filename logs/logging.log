@@ -12255,3 +12255,56 @@ Unconditional classes:
 16.06.2023 16:19:52.501 [HikariPool-1 connection closer] DEBUG c.z.h.pool.PoolBase - HikariPool-1 - Closing connection conn9: url=jdbc:h2:mem:0a518fee-7468-4d99-89b3-60bc26e4ec03 user=SA: (connection evicted)
 16.06.2023 16:19:52.501 [SpringApplicationShutdownHook] DEBUG c.z.h.p.HikariPool - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
 16.06.2023 16:19:52.501 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+16.06.2023 22:26:34.355 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+16.06.2023 22:26:34.357 [main] INFO  o.h.v.i.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+16.06.2023 22:26:34.360 [main] DEBUG o.h.v.i.x.c.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+16.06.2023 22:26:34.361 [main] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+16.06.2023 22:26:34.361 [main] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+16.06.2023 22:26:34.361 [main] DEBUG o.h.v.i.x.c.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+16.06.2023 22:26:34.364 [main] DEBUG o.h.v.i.e.r.TraversableResolvers - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+16.06.2023 22:26:34.365 [main] DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+16.06.2023 22:26:34.378 [main] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+16.06.2023 22:26:34.437 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+16.06.2023 22:26:34.440 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+16.06.2023 22:26:34.440 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+16.06.2023 22:26:34.440 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+16.06.2023 22:26:34.440 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+16.06.2023 22:26:34.440 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+16.06.2023 22:26:34.502 [main] DEBUG o.h.v.r.PlatformResourceBundleLocator - ValidationMessages not found.
+16.06.2023 22:26:34.504 [main] DEBUG o.h.v.r.PlatformResourceBundleLocator - ContributorValidationMessages not found.
+16.06.2023 22:26:34.505 [main] DEBUG o.h.v.r.PlatformResourceBundleLocator - org.hibernate.validator.ValidationMessages found.
+16.06.2023 22:26:34.515 [main] ERROR u.s.r.s.TaskService - You cannot change the status to 
+16.06.2023 22:26:34.515 [main] INFO  u.s.r.c.TaskControllerTest - Test controller. 400 BAD_REQUEST "You cannot change the status to CANCELLED"
+16.06.2023 22:26:34.517 [main] ERROR u.s.r.s.TaskService - You cannot change the status to 
+16.06.2023 22:26:34.517 [main] INFO  u.s.r.c.TaskControllerTest - Test controller. 400 BAD_REQUEST "You cannot change the status to SIGNED"
+16.06.2023 22:26:34.520 [main] ERROR u.s.r.s.TaskService - You cannot change the status to 
+16.06.2023 22:26:34.520 [main] INFO  u.s.r.c.TaskControllerTest - Test controller. 400 BAD_REQUEST "You cannot change the status to WORK_IN_PROGRESS"
+16.06.2023 22:26:34.521 [main] DEBUG o.h.v.i.x.c.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+16.06.2023 22:26:34.521 [main] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+16.06.2023 22:26:34.522 [main] DEBUG o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+16.06.2023 22:26:34.522 [main] DEBUG o.h.v.i.x.c.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+16.06.2023 22:26:34.522 [main] DEBUG o.h.v.i.e.r.TraversableResolvers - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+16.06.2023 22:26:34.522 [main] DEBUG o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+16.06.2023 22:26:34.522 [main] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+16.06.2023 22:26:34.523 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
+16.06.2023 22:26:34.523 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+16.06.2023 22:26:34.523 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+16.06.2023 22:26:34.523 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+16.06.2023 22:26:34.523 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+16.06.2023 22:26:34.523 [main] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+16.06.2023 22:26:34.532 [main] ERROR u.s.r.s.TaskService - You cannot change the status to 
+16.06.2023 22:26:34.532 [main] INFO  u.s.r.c.TaskControllerTest - Test controller. 400 BAD_REQUEST "You cannot change the status to POSTPONED"
+16.06.2023 22:26:34.567 [main] ERROR u.s.r.s.TaskService - You cannot change the status to 
+16.06.2023 22:26:34.567 [main] INFO  u.s.r.s.TaskServiceTest - Test service. 400 BAD_REQUEST "You cannot change the status to CANCELLED"
+16.06.2023 22:26:34.569 [main] ERROR u.s.r.s.TaskService - Error: No objects with location: 
+16.06.2023 22:26:34.570 [main] INFO  u.s.r.s.TaskServiceTest - Test service. Status request:  404 NOT_FOUND
+16.06.2023 22:26:34.572 [main] ERROR u.s.r.s.TaskService - Invalid request: The object must not contain an Id:
+16.06.2023 22:26:34.572 [main] INFO  u.s.r.s.TaskServiceTest - Test service. Status request:  400 BAD_REQUEST
+16.06.2023 22:26:34.575 [main] ERROR u.s.r.s.TaskService - You cannot change the status to 
+16.06.2023 22:26:34.576 [main] INFO  u.s.r.s.TaskServiceTest - Test service. 400 BAD_REQUEST "You cannot change the status to SIGNED"
+16.06.2023 22:26:34.584 [main] ERROR u.s.r.s.TaskService - You cannot change the status to 
+16.06.2023 22:26:34.584 [main] INFO  u.s.r.s.TaskServiceTest - Test service. 400 BAD_REQUEST "You cannot change the status to WORK_IN_PROGRESS"
+16.06.2023 22:26:34.590 [main] ERROR u.s.r.s.TaskService - Error: No object found with id:5
+16.06.2023 22:26:34.590 [main] INFO  u.s.r.s.TaskServiceTest - Test service. Status request:  404 NOT_FOUND
+16.06.2023 22:26:34.592 [main] ERROR u.s.r.s.TaskService - You cannot change the status to 
+16.06.2023 22:26:34.592 [main] INFO  u.s.r.s.TaskServiceTest - Test service. 400 BAD_REQUEST "You cannot change the status to POSTPONED"

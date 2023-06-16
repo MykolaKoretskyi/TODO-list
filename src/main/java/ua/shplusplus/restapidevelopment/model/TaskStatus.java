@@ -1,4 +1,4 @@
-package ua.shplusplus.restapidevelopment.entities;
+package ua.shplusplus.restapidevelopment.model;
 
 import java.util.Set;
 
