@@ -6,7 +6,7 @@ uk:
 
   Логіка програми працює зі списком TODO завдань, які під час роботи програми записуються 
 в БД H2 in-memory. Для зберігання даних створюється та заповнюється таблиця з допомогою 
-скриптів які знаходяться в папці resources/database. В об'єкті TaskStatus.enum у пекеджі entities 
+скриптів які знаходяться в папці resources/database. В об'єкті TaskStatus.enum у пекеджі "model" 
 описані допустимі значення статусів TODO завдань.
 
   Додаток запускається на порті 8085 (вказаний у файлі application.properties)
@@ -30,7 +30,7 @@ uk:
 статусу наявний список допустимих значень. Також реалізовано тестування вийнятків при неправильній 
 зміні статусу.
 
-======================================================================================================
+====================================================================================
 
 en:
  This application is a Java-CRUD REST API demo application,
@@ -40,7 +40,7 @@ Application description:
 
   The logic of the program works with the TODO list of tasks that are recorded during the program's operation
 in the H2 in-memory database. To store data, a table is created and filled usingscripts located in the 
-resources/database folder. In the TaskStatus.enum object in the "entities" package allowable values ​​of TODO task 
+resources/database folder. In the TaskStatus.enum object in the "model" package allowable values ​​of TODO task 
 statuses are described.
 
   The application runs on port 8085 (specified in the "application.properties" file)
