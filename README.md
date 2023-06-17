@@ -1,4 +1,4 @@
-uk:
+uk:   
   Даний додаток являє собою Java-CRUD REST API демонстраційну програму, 
 написану з використанням фреймворку Spring Boot.
 
@@ -32,7 +32,7 @@ uk:
 
 ==========================================================================
 
-en:
+en:   
  This application is a Java-CRUD REST API demo application,
 written using the Spring Boot framework.
 
