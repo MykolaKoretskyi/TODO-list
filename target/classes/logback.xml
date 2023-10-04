@@ -26,7 +26,7 @@
             <!-- we will keep the log files for so many days -->
             <maxHistory>1</maxHistory>
 
-            <!-- The maximum size of log files is 1 gigabytes -->
+            <!-- The maximum size of log files is 10 megabytes -->
             <totalSizeCap>10MB</totalSizeCap>
 
         </rollingPolicy>

@@ -1,5 +1,5 @@
 HELP.md
-
+curl.sh
 
 
 ### STS ###
@@ -33,3 +33,4 @@ build/
 ### Logger ###
 logs
 *.log
+

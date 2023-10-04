@@ -1,64 +1,43 @@
-uk:   
-  Даний додаток являє собою Java-CRUD REST API демонстраційну програму, 
-написану з використанням фреймворку Spring Boot.
 
-Опис додатку:
+<h1>Java-CRUD REST API</h1>
 
-  Логіка програми працює зі списком TODO завдань, які під час роботи програми записуються 
-в БД H2 in-memory. Для зберігання даних створюється та заповнюється таблиця з допомогою 
-скриптів які знаходяться в папці resources/database. В об'єкті TaskStatus.enum у пекеджі "model" 
-описані допустимі значення статусів TODO завдань.
+<h2>Description of the Application:</h2>
 
-  Додаток запускається на порті 8085 (вказаний у файлі application.properties)
+<p>This application is a Java CRUD REST API demonstration program written using the Spring Boot framework.</p>
+<p>The program's logic works with a list of TODO tasks, which are recorded in an H2 in-memory database 
+during program execution. Data storage is managed by creating and populating a table using scripts located 
+in the "resources/database" folder. The allowed status values for TODO tasks are described 
+in the "TaskStatus.enum" object in the "model" package.</p>
 
-  Для даного додатку реалізовано формування авто-докементації для Swagger, 
-з якою можна працювати за адресою: http://localhost:8085/swagger-ui/index.html#
+<p>The application runs on port 8085 (as specified in the "application.properties" file).</p>
 
-  Реалізовано автентифікацію типу Basic, наявні два користувача з різними рівнями доступу 
-до контрольних точок: admin(GET, POST, PUT, DELETE), user(GET, PUT).
-Інформація для логування: (username:admin, password:200); (username:user, password:100)
+<p>For this application, auto-documentation for Swagger has been implemented, and it can be accessed 
+at the following URL: http://localhost:8085/swagger-ui/index.html#</p>
 
-  Налаштовано логування (файл налаштувань logback.xml) із виводом у консоль та записами у файл
+<p>Authentication of the Basic type has been implemented, with two users having different access levels to 
+endpoints: admin (GET, POST, PUT, DELETE) and user (GET, PUT). 
+Login information: (username: admin, password: 200); (username: user, password: 100)</p>
 
-  Також реалізована валідація даних що вводяться
+<p>Logging is configured (in the "logback.xml" settings file) with both console output and file recording.</p>
 
-  Налаштовано інтернаціоналізацію повідомлень додаток підтримує такі шифри мов: de, en, fr, it, uk. 
-Мова задається шляхом введення в адресному рядку браузера після url-адреси: ?language=en 
+<p>Data validation has also been implemented for user input.</p>
 
-  Крім цього методи класу контролера та класу сервісу покриті модульними тестами з використанням 
-мок-об'єктів. Значна увага приділялась тестуванні зміни статусів завдань, оскільки в кожного 
-статусу наявний список допустимих значень. Також реалізовано тестування вийнятків при неправильній 
-зміні статусу.
+<p>Internationalization of messages is configured, and the application supports the following 
+language codes: de, en, fr, it, uk. You can specify the language by adding it to the URL in the browser's 
+address bar after the URL, e.g., ?language=en.</p>
 
-==========================================================================
+<p>Additionally, controller and service class methods are covered by unit tests using mock objects. 
+Significant attention was given to testing the status changes of tasks since each status has a list of valid values. 
+Exception testing for incorrect status changes has also been implemented.</p>
 
-en:   
- This application is a Java-CRUD REST API demo application,
-written using the Spring Boot framework.
 
-Application description:
-
-  The logic of the program works with the TODO list of tasks that are recorded during the program's operation
-in the H2 in-memory database. To store data, a table is created and filled usingscripts located in the 
-resources/database folder. In the TaskStatus.enum object in the "model" package allowable values ​​of TODO task 
-statuses are described.
-
-  The application runs on port 8085 (specified in the "application.properties" file)
-
-  For this application, the formation of auto-documentation for Swagger has been implemented,
-which you can work with at: http://localhost:8085/swagger-ui/index.html#
-
-  Basic authentication is implemented, there are two users with different access levels
-to checkpoints: admin(GET, POST, PUT, DELETE), user(GET, PUT).
-Login information: (username:admin, password:200); (username:user, password:100)
-
-  Configured logging (config file logback.xml) with output to the console and records to a file
-
-  Validation of entered data is also implemented
-
-  Internationalization of messages is configured, the application supports the following language codes: de, en, fr, it, uk.
-The language is set by entering in the address bar of the browser after the url address: ?language=en
-
-  In addition, the methods of the controller class and the service class are covered by unit tests using
-mock objects. Considerable attention was paid to the testing of changes in task statuses, since everyone has
-status has a list of valid values. Exception testing is also implemented in the event of an error change of status.
+<h2>Technologies Used</h2>
+<ul>
+<li>Java</li>
+<li>Maven</li>
+<li>Spring</li>
+<li>H2-DB</li>
+<li>Swagger</li>
+<li>JUnit</li>
+<li>Mockito</li>
+</ul>
