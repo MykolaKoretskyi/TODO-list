@@ -42,12 +42,12 @@ Exception testing for incorrect status changes has also been implemented.</p>
 <li>Mockito</li>
 </ul>
 
-<h2>Screenshots of the application console</h2>
+<h2>Screenshots of testing the program by Swagger</h2>
 
-![Request from the program](./assets/Swagger_2.jpg)
-![Request from the program](./assets/Autorizations.jpg) 
-![Request from the program](./assets/Swagger_3.jpg) 
-![Request from the program](./assets/Swagger_4.jpg) 
-![Request from the program](./assets/Swagger_5.jpg) 
-![Request from the program](./assets/Swagger_6.jpg)
-![Request from the program](./assets/Swagger_7.jpg)
+![Get without authorization](./assets/Swagger_2.jpg)
+![Autorization](./assets/Autorizations.jpg) 
+![Get with authorization](./assets/Swagger_3.jpg) 
+![Delete Task](./assets/Swagger_4.jpg) 
+![Method POST Bad Reques](./assets/Swagger_5.jpg) 
+![Correct method POST](./assets/Swagger_6.jpg)
+![Method PUT](./assets/Swagger_7.jpg)
