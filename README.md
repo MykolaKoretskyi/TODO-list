@@ -1,7 +1,7 @@
 
 <h1>Java-CRUD REST API</h1>
 
-<h2>Description of the Application:</h2>
+<h2>Description of the Application</h2>
 
 <p>This application is a Java CRUD REST API demonstration program written using the Spring Boot framework.</p>
 <p>The program's logic works with a list of TODO tasks, which are recorded in an H2 in-memory database 
@@ -30,8 +30,8 @@ address bar after the URL, e.g., ?language=en.</p>
 Significant attention was given to testing the status changes of tasks since each status has a list of valid values. 
 Exception testing for incorrect status changes has also been implemented.</p>
 
-
 <h2>Technologies Used</h2>
+
 <ul>
 <li>Java</li>
 <li>Maven</li>
@@ -41,3 +41,13 @@ Exception testing for incorrect status changes has also been implemented.</p>
 <li>JUnit</li>
 <li>Mockito</li>
 </ul>
+
+<h2>Screenshots of the application console</h2>
+
+![Request from the program](./assets/Swagger_2.jpg)
+![Request from the program](./assets/Autorizations.jpg) 
+![Request from the program](./assets/Swagger_3.jpg) 
+![Request from the program](./assets/Swagger_4.jpg) 
+![Request from the program](./assets/Swagger_5.jpg) 
+![Request from the program](./assets/Swagger_6.jpg)
+![Request from the program](./assets/Swagger_7.jpg)
