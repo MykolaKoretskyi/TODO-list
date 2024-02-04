@@ -10,9 +10,6 @@ public class ErrorDto {
   private String status;
   private String message;
 
-  public ErrorDto() {
-  }
-
 
   public ErrorDto(LocalDateTime dateTime, HttpStatus httpStatus, String message) {
 

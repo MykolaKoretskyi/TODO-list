@@ -17,10 +17,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import ua.shplusplus.restapidevelopment.exceptions.RequestException;
 import ua.shplusplus.restapidevelopment.model.SuccessDTO;
 import ua.shplusplus.restapidevelopment.model.Task;
 import ua.shplusplus.restapidevelopment.model.TaskDTO;
-import ua.shplusplus.restapidevelopment.exceptions.RequestException;
 import ua.shplusplus.restapidevelopment.repositories.TaskRepository;
 
 @Service
@@ -56,6 +56,7 @@ public class TaskService {
     return findAll;
   }
 
+
   public Task getOneTask(Long id) {
 
     bundle = ResourceBundle.getBundle(MESSAGES, Locale.getDefault());
@@ -66,6 +67,7 @@ public class TaskService {
           bundle.getString(ID_EXISTS) + id);
     });
   }
+
 
   public SuccessDTO addOneTask(TaskDTO taskDTO, BindingResult bindingResult) {
 
@@ -85,6 +87,7 @@ public class TaskService {
         bundle.getString("newCreated"), location.toString());
   }
 
+
   public Task updateOneTask(Long id, TaskDTO taskDTO, BindingResult bindingResult) {
 
     bundle = ResourceBundle.getBundle(MESSAGES, Locale.getDefault());
@@ -92,6 +95,7 @@ public class TaskService {
 
     return update(taskDTO, task);
   }
+
 
   private Task checkAndGetTask(
       Long id,
@@ -117,6 +121,7 @@ public class TaskService {
     return task;
   }
 
+
   public SuccessDTO deleteOneTask(Long id) {
 
     bundle = ResourceBundle.getBundle(MESSAGES, Locale.getDefault());
@@ -135,6 +140,7 @@ public class TaskService {
         bundle.getString("deletedObj") + id, location);
   }
 
+
   public SuccessDTO deleteAllTask() {
 
     bundle = ResourceBundle.getBundle(MESSAGES, Locale.getDefault());
@@ -148,6 +154,7 @@ public class TaskService {
     return new SuccessDTO(LocalDateTime.now(), HttpStatus.OK,
         bundle.getString("deletedAll"), "/task/delete/all");
   }
+
 
   public Task update(TaskDTO taskDTO, Task task) {
 
@@ -167,6 +174,7 @@ public class TaskService {
     return task;
   }
 
+
   private void createExceptionNoId(TaskDTO taskDTO) {
     logger.error(bundle.getString("invalidRequest"));
     throw new RequestException(HttpStatus.BAD_REQUEST,
@@ -181,12 +189,14 @@ public class TaskService {
         bundle.getString("validationError") + errorsMap);
   }
 
+
   private void createExceptionDifferentId(Long id, Long idObject) {
     logger.error(bundle.getString("requestDifferentFromObj"), id, idObject);
     throw new RequestException(HttpStatus.BAD_REQUEST,
         bundle.getString("errorRequestId") + id +
             bundle.getString("isDifferentFromObj") + idObject);
   }
+
 
   public static Map<String, String> getValidatorMessages(BindingResult bindingResult) {
 
